@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form-bg {
+    background-image: linear-gradient(to left, rgba(100, 75, 75, 0), rgb(49, 20, 20)), url("https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1050&w=1200");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center center;
+    height: 92.4vh;
+    color: white;
+}
+
+
+.form-heading h3{
+    color: steelblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-family: 'Long Cang', cursive;
+    text-align: center;
+    margin-bottom: 20px; 
+}
+
+label {
+    color: steelblue;
+}
+
+.form-bg input,
+.form-row select {
+    background: none;
+    border-bottom: 1px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    color: white;
+    /* color:rgb(224, 109, 32); */
+    /* font-family: 'Long Cang', cursive; */
+}
+
+.form-control:active,
+.form-control:focus,
+.form-control:focus:active {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    color:rgb(224, 109, 32);
+    box-shadow: none;
+    border-bottom: 2px solid rgb(224, 109, 32);
+}
+
+.form-control::placeholder {
+    font-family: 'Long Cang', cursive;
+    font-size: 26px;
+}
+
+.form-control:focus::placeholder {
+    color:  rgb(243, 125, 46);
+    opacity: .6;
+}
+
+.button {
+    text-align: center;
+}
+
+.btn-form-submit {
+    margin: 50px 0px 0px 20px;
+    font-size: 16px;
+    color: white;
+}
+
+.btn-cancel {
+    background-color: rgba(143, 44, 44, 0.5);
+    border-bottom: 2px solid rgb(134, 54, 54);
+}
+
+.btn-cancel:hover {
+    background-color: rgba(134, 28, 28, 0.5);
+    border-bottom: 2px solid orange;
+    color: white;
+}
+
+.btn-booking {
+    background-color: rgba(32, 139, 37, 0.5);
+    border-bottom: 2px solid  rgb(38, 107, 41);
+}
+
+.btn-booking:hover {
+    background-color: rgba(16, 102, 20, 0.5);
+    border-bottom: 2px solid orange;
+    color: white;
+}
+
+.btn-form-submit:focus {
+    box-shadow: none;
+    border-bottom: 2px solid rgb(224, 109, 32);
+}
+
+
