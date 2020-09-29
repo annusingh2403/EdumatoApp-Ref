@@ -3,8 +3,8 @@ import axios from "axios";
 import {Link} from "react-router-dom";
 import "./forms.css";
 
-const restaurantDetailsUrl = "https://edumato-app.herokuapp.com/restaurantDetails";
-const placeOrderUrl = "https://edumato-app.herokuapp.com/placeorder";
+const restaurantDetailsUrl = "https://edumato-api.herokuapp.com/restaurantDetails";
+const placeOrderUrl = "https://edumato-api.herokuapp.com/placeorder";
 
 
 class PlaceOrder extends Component{

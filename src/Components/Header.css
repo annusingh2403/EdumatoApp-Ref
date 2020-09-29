@@ -4,17 +4,22 @@
     box-sizing: border-box;
 }
 
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
 .navbar1 {
-    /* width: 100%; */
+    width: 100%;
     background-color: rgb(201, 25, 25);
     /* padding: 15px; */
 }
 
-/* .navbar1::after{
+.navbar1::after{
     content: "";
     display: table;
     clear: both;
-} */
+}
 
 .logo,
 .logo:link,
@@ -40,6 +45,7 @@
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     padding-left: 5px;
+    padding-bottom: 10px;
 }
 
 

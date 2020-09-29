@@ -1,6 +1,8 @@
 import React from "react";
 import Search from "./Search";
 import QuickSearchApi from "./QuickSearchApi";
+import Footer from "../Footer";
+
 
 const Home = (props) => {
 
@@ -12,6 +14,7 @@ const Home = (props) => {
         <div>
             <Search restId={(data) => {handleRest(data)}}/>
             <QuickSearchApi />
+            <Footer/>
         </div>
     )
 }

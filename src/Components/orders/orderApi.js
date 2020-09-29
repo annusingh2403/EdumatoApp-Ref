@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import axios from "axios";
 import OrderView from "./orderDisplay";
 
-const OrderUrl = "https://edumato-app.herokuapp.com/orders"
+const OrderUrl = "https://edumato-api.herokuapp.com/orders"
 
 class Booking extends Component {
     constructor(){

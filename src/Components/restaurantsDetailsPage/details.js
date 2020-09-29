@@ -5,7 +5,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import "./details.css";
 
-const restaurantDetailsUrl = "https://edumato-app.herokuapp.com/restaurantDetails";
+const restaurantDetailsUrl = "https://edumato-api.herokuapp.com/restaurantDetails";
 
 class RestaurantDetails extends Component {
     constructor(props){
@@ -36,9 +36,34 @@ class RestaurantDetails extends Component {
         return (
             <div className="details-box">
                 <div className="image-container mt-0 mt-sm-0 ">
-                    <img src={rest.thumb} alt=""/>
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div className="carousel-inner image-container">
+                        <div className="carousel-item active">
+                        <img className="d-block" src="https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=450&w=1200" alt="First slide"/>
+                        </div>
+                        <div className="carousel-item">
+                        <img className="d-block" src="https://images.pexels.com/photos/1095550/pexels-photo-1095550.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=1200" alt="Second slide"/>
+                        </div>
+                        <div className="carousel-item">
+                        <img className="d-block" src="https://images.pexels.com/photos/372882/pexels-photo-372882.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="Third slide"/>
+                        </div>
+                    </div>
+                    <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                        <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Previous</span>
+                    </a>
+                    <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                        <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span className="sr-only">Next</span>
+                    </a>
+                    </div>
                     <div className="image-text">
-                        <a href="#">Click to see Image Gallery</a> 
+                        <Link to={"/gallery"}>Click to see Image Gallery</Link> 
                     </div>
                 </div>
                 <br/>

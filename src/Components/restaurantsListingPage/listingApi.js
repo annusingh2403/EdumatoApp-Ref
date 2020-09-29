@@ -5,7 +5,7 @@ import ListingDisplay from "./listingDisplay"
 import CuisineFilter from "../filters/cuisineFilter";
 import CostFilter from "../filters/costFilter";
 
-const ListingUrl = "https://edumato-app.herokuapp.com/restaurants?mealtype=";
+const ListingUrl = "https://edumato-api.herokuapp.com/restaurants?mealtype=";
 
 class Listing extends Component {
     constructor(props){

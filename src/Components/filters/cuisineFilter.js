@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import axios from "axios";
 
-const url = "https://edumato-app.herokuapp.com/restaurants";
+const url = "https://edumato-api.herokuapp.com/restaurants";
 
 class CuisineFilter extends Component {
     cuisineLogic = (event) => {

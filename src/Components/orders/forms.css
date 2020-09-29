@@ -7,9 +7,9 @@
 .form-bg {
     background-image: linear-gradient(to left, rgba(100, 75, 75, 0), rgb(49, 20, 20)), url("https://images.pexels.com/photos/918327/pexels-photo-918327.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=1050&w=1200");
     background-repeat: no-repeat;
-    background-size: 100% 100%;
+    /* background-size: 100% 100%; */
     background-position: center center;
-    height: 92.4vh;
+    /* height: 92.4vh; */
     color: white;
 }
 

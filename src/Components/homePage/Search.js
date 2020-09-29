@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import "./Search.css";
 
-const locationUrl = "https://edumato-app.herokuapp.com/location/"
-const restaurantUrl = "https://edumato-app.herokuapp.com/restaurants?city="
+const locationUrl = "https://edumato-api.herokuapp.com/location/"
+const restaurantUrl = "https://edumato-api.herokuapp.com/restaurants?city="
 
 class Search extends Component {
     constructor(){
@@ -53,6 +53,7 @@ class Search extends Component {
     }   
 
     render() {  
+
         return ( 
             <div className="header-area">
                 <div className="container">

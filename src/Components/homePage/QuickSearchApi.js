@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import QuickSearchDisplay from "./quickSearchDisplay";
 
-const mealTypeUrl = "https://edumato-app.herokuapp.com/mealtype";
+const mealTypeUrl = "https://edumato-api.herokuapp.com/mealtype";
 
 class QuickSearchApi extends Component {
     constructor(){
