@@ -17,7 +17,7 @@ const Header = () => {
                     <div className="navbar-links">
                         {/* <a href="#">Login</a> */}
                         <Link to="/login">Login</Link>
-                        <Link to="/signup">Create an account</Link>
+                        <Link to="/register">Create an account</Link>
                         {/* <a href="#">Create an account</a> */}
                         <Link to="/vieworder"><ion-icon name="cart"></ion-icon></Link>
                     </div>

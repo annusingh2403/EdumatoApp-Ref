@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import "./loginpage.scss";
+import "./register.css";
 
 
 
@@ -11,34 +11,40 @@ class Register extends Component {
 
     render() { 
         return ( 
-            <div className="base-container">
-                <div className="header">
-                    <div className="content">
-                        <div className="image">
-                            <img src="https://image.freepik.com/free-vector/login-concept-illustration_114360-739.jpg" alt=""/>
-                        </div>
-                        <div className="form">
-                            <div className="form-group">
-                                <label htmlFor="username">Usrname</label>
-                                <input type="text" name="username" placeholder="username"/>
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="email">Email</label>
-                                <input type="email" name="email" placeholder="Email..."/>
-                            </div>
-                            <div className="form-group">
-                                <label htmlFor="password">Password</label>
-                                <input type="password" name="password" placeholder="password"/>
-                            </div>
-                        </div>
+            <form autocomplete="off" className="register">
+                <div className="img-box">
+                    <img src="https://thumbs.dreamstime.com/b/privacy-policy-protecting-your-vector-colorful-illustration-concept-computer-data-web-page-security-access-shield-173435728.jpg" alt=""/>
+                </div>
+                <div className="form-row">
+                    <div className="col">
+                    <input type="text" className="form-control" placeholder="First name" required/>
                     </div>
-                    <div className="footer">
-                        <button type="button" className="btn">
-                            Register
-                        </button>
+                    <div className="col">
+                    <input type="text" className="form-control" placeholder="Last name" required/>
                     </div>
                 </div>
-            </div>
+                <div className="form-row">
+                    <div className="col">
+                    <input type="email" className="form-control" placeholder="Email..." required/>
+                    </div>
+                    <div className="col">
+                    <input type="phone" className="form-control" placeholder="Phone" required/>
+                    </div>
+                </div>
+                <div className="form-row">
+                <div className="col">
+                    <input type="password" className="form-control" placeholder="Password" required/>
+                    </div>
+                    <div className="col">
+                    <input type="password" className="form-control" placeholder="Confirm Password" required/>
+                    </div>
+                </div>
+                <div className="login-button-box">
+                    <button type="button" className="btn login-btn">
+                        Login
+                    </button>
+                </div>
+            </form>
         );
     }
 }

@@ -79,7 +79,7 @@ class PlaceOrder extends Component{
 
     render() { 
         return ( 
-            <div className="container-fluid form-bg content">
+            <div className="container-fluid form-bg content forms">
             <form autocomplete="off" className="container">
                 <div className="form-heading">
                     <h3>Place Order</h3>
@@ -141,50 +141,7 @@ class PlaceOrder extends Component{
             </div>
 
 
-            // {/* // <form className="container">
-            //     <div className="panel panel-primary">
-            //         <div className="panel-heading">
-            //             <h3 className="bg-primary">Place booking</h3>
-            //         </div>
-            //         <div className="panel-body">
-            //             <div className="form-group">
-            //                 <label className="control-label"> Order_id: </label>
-            //                 <input type="text" name="order_id" className="form-control" value={this.state.order_id} readOnly/>
-            //             </div>
-            //             <div className="form-group">
-            //                 <label className="control-label"> Restaurant Name </label>
-            //                 <input type="text" name="rest_name" className="form-control" value={this.state.rest_name} readOnly/>
-            //             </div>
-            //             <div className="form-group">
-            //                 <label className="control-label"> User Name </label>
-            //                 <input type="text" name="user_name" className="form-control" value={this.state.user_name} onChange={this.handleChangeName} required/>
-            //             </div>
-            //             <div className="form-group">
-            //                 <label className="control-label">Phone </label>
-            //                 <input type="text" name="phone" className="form-control" value={this.state.phone} onChange={this.handleChangePhone} required/>
-            //             </div>
-            //             <div className="form-group">
-            //                 <label className="control-label">Address </label>
-            //                 <input type="text" name="address" className="form-control" value={this.state.address} onChange={this.handleChangeAddress} required/>
-            //             </div>
-            //             <div className="form-group">
-            //                 <label className="control-label">No. of Person </label>
-            //                 <select name="person" value={this.state.person} onChange={this.handleChangePerson} className="form-control" required> 
-            //                     <option value="Person" readOnly> Select Person</option>
-            //                     <option value="1">1</option>
-            //                     <option value="2">2</option>
-            //                     <option value="3">3</option>
-            //                     <option value="4">4</option>
-            //                 </select>    
-            //             </div>
-            //             <Link to={`/rest/${this.props.match.params.id}`}
-            //             className="btn btn-danger">Cancel </Link> &nbsp;
-            //             <button className="btn btn-success" onClick={this.handleSubmit}>
-            //                 Submit
-            //             </button>
-            //         </div>
-            //     </div>
-            // </form> */}
+            
         );
     }
 
